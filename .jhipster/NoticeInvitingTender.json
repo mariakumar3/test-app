@@ -1,0 +1,401 @@
+{
+  "name": "NoticeInvitingTender",
+  "fields": [
+    {
+      "fieldName": "evaluationType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "prequalValidityPeriod",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "invitingStrategy",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "minNoBidsReceive",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "procuringEntity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "procuringEntityDesignation",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "procuringEntityAddress",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invitingAuthority",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invitingAuthorityDesignation",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invitingAuthorityAddress",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "participatingCondnYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "tenderFee",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "emd",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "bidValueType",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "techWeightage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "prequalTenderBidOpen",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderDocClose",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderReceiptClose",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderQueryClose",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "technicalBidOpen",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "financialBidOpen",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "recalledDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "recalledBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bidSubmissionStartDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "bidValidityPeriod",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "noOfCalls",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "preBidMeetingDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "preBidMeetingYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "prebidMeetingAddress",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "preQualificationBidOpen",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "mandateAllItemsYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "queriesPublished",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "denominationType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "retenderedYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "percentageRateType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactPerson",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "splitEmdYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "emdBankGuarantee",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "emdCash",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "bgValidityPeriod",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hideWeightage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "itemwiseTechEvalYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isMultipleSupplierSelectionAllowed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "techEvalStartDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "techEvalEndDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "commEvalStartDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "commEvalEndDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "emdVerifiedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "multipleCurrencySelectionAllowedYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isEditable",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isEvaluated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isTechWeightageAllowed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isTechWeightageCompleted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isCommercialBidEditCompleted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "templateYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "templateId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentVerifiedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "paymentVerifiedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "isItemwiseCsr",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isBidViewEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isNegotiation",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "highestBidderSelection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isVariableEmdAllowed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "nitPublisherCertId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autoExtendYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "noOfDaysExtend",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "isExtensionAvailable",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "specialSchemeTender",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isBidValidityExpiryTaskCreated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "evaluationTypeFlag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "qcbsTenderYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedUser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isWorldBankFunded",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ecClearanceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ecClearanceDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "tenderSchedule",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderSchedule",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderObjectStore",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderObjectStore"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderGoodsItems",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderGoodsItem"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderSample",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderSample"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderTechnicalParameter",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderTechnicalParameter"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderGoodsGroup",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderGoodsGroup"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderCriterion",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderCriterion"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderCriterionDocument",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderCriterionDocument"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderAddendum",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderAddendum"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderCorrigendum",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderCorrigendum"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderQuery",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderQuery"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderScrutinyCommittee",
+      "otherEntityRelationshipName": "noticeInvitingTender",
+      "relationshipName": "tenderScrutinyCommittee"
+    }
+  ],
+  "entityTableName": "notice_inviting_tender",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113115"
+}

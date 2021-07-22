@@ -1,0 +1,35 @@
+{
+  "name": "TenderScrutinyMaster",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxUsers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minUsers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "activeYn",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "tender_scrutiny_master",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113129"
+}

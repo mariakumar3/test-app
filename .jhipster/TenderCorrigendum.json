@@ -1,0 +1,124 @@
+{
+  "name": "TenderCorrigendum",
+  "fields": [
+    {
+      "fieldName": "reason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyOrder",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tenderDocCloseDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderDocCloseDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderReceiptCloseDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderReceiptCloseDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderQueryCloseDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tenderQueryCloseDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "technicalBidOpenDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "technicalBidOpenDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "financialBidOpenDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "financialBidOpenDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalBidOpenDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalBidOpenDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalTenderBidOpenOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalTenderBidOpenRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "preBidMeetingDateOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "preBidMeetingDateRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalValidityPeriodOriginal",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prequalValidityPeriodRevised",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "prebidMeetingAddressOriginal",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "prebidMeetingAddressRevised",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderCorrigendumDetails",
+      "otherEntityRelationshipName": "tenderCorrigendum",
+      "relationshipName": "tenderCorrigendumDetail"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderCorrigendum",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_corrigendum",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113125"
+}

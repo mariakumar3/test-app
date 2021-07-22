@@ -1,0 +1,56 @@
+{
+  "name": "TenderCriterion",
+  "fields": [
+    {
+      "fieldName": "criterionMasterId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "criterionType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "criterionCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "criterionTypeOthersValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderCriterionDocument",
+      "otherEntityRelationshipName": "tenderCriterion",
+      "relationshipName": "tenderCriterionDocument"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderCriterion",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_criterion",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113121"
+}

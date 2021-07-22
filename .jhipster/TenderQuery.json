@@ -1,0 +1,61 @@
+{
+  "name": "TenderQuery",
+  "fields": [
+    {
+      "fieldName": "supplierGeneralInfoId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "serialNo",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "referenceDocument",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "docSectionName",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "docPageNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tenderQueryText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenderQueryResponse",
+      "otherEntityRelationshipName": "tenderQuery",
+      "relationshipName": "tenderQueryResponse"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderQuery",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_query",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113127"
+}

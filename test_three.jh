@@ -1,0 +1,270 @@
+entity TenderSchedule{
+tenderNumber String maxlength(50),
+title String  maxlength(512),
+description String maxlength(50),
+category Integer,
+ecv BigDecimal,
+indentId Long,
+deptId Long,
+status String maxlength(25),
+remarks String,
+parentTenderRef Integer,
+noOfCalls Integer,
+processId Integer,
+csrValue BigDecimal,
+ecvtenderyYn Boolean,
+certificateId Integer,
+paymentsVerified Integer,
+dtsApprovalDate ZonedDateTime, 
+mandatoryClause String,
+location Integer,
+delegateTo Integer,
+isApprovedBySelf Integer,
+catWorkCategoryName String maxlength(255),
+negotiationStatus String maxlength(25),
+manualTenderYn Boolean,
+districtId Long,
+draftPublishStatus String maxlength(50),
+csrRemarks String ,
+procEntityType Integer,
+dtsApprovedBy String maxlength(175)
+}
+
+entity NoticeInvitingTender{
+evaluationType Integer,
+prequalValidityPeriod ZonedDateTime,
+invitingStrategy Boolean,
+minNoBidsReceive Integer,
+procuringEntity Integer,
+procuringEntityDesignation Integer,
+procuringEntityAddress Integer,
+invitingAuthority Integer,
+invitingAuthorityDesignation Integer,
+invitingAuthorityAddress Integer,
+participatingCondnYn Boolean,
+tenderFee BigDecimal,
+emd BigDecimal,
+bidValueType Boolean,
+techWeightage Integer,
+prequalTenderBidOpen ZonedDateTime,
+tenderDocClose ZonedDateTime,
+tenderReceiptClose ZonedDateTime,
+tenderQueryClose ZonedDateTime,
+technicalBidOpen ZonedDateTime,
+financialBidOpen ZonedDateTime,
+publishedDate ZonedDateTime,
+publishedBy Integer,
+recalledDate ZonedDateTime,
+recalledBy Integer,
+bidSubmissionStartDate ZonedDateTime,
+bidValidityPeriod Integer,
+noOfCalls Integer,
+preBidMeetingDate ZonedDateTime,
+preBidMeetingYn Boolean,
+prebidMeetingAddress Integer,
+preQualificationBidOpen ZonedDateTime,
+mandateAllItemsYn Boolean,
+queriesPublished Boolean,
+denominationType String,
+retenderedYn Boolean,
+percentageRateType String,
+contactPerson String,
+splitEmdYn Boolean,
+emdBankGuarantee BigDecimal,
+emdCash BigDecimal,
+bgValidityPeriod Integer,
+hideWeightage Boolean,
+itemwiseTechEvalYn Boolean,
+isMultipleSupplierSelectionAllowed Boolean,
+techEvalStartDate ZonedDateTime,
+techEvalEndDate ZonedDateTime,
+commEvalStartDate ZonedDateTime,
+commEvalEndDate ZonedDateTime,
+emdVerifiedDate ZonedDateTime,
+multipleCurrencySelectionAllowedYn Boolean,
+isEditable Boolean,
+isEvaluated Boolean,
+isTechWeightageAllowed Boolean,
+isTechWeightageCompleted Boolean,
+isCommercialBidEditCompleted Boolean,
+templateYn Boolean,
+templateId Long,
+paymentVerifiedBy Integer,
+paymentVerifiedDate ZonedDateTime,
+isItemwiseCsr Boolean, 
+isBidViewEnabled Boolean,
+isNegotiation Boolean,
+highestBidderSelection Boolean,
+isVariableEmdAllowed Boolean,
+nitPublisherCertId Integer,
+autoExtendYn Boolean,
+noOfDaysExtend Integer,
+isExtensionAvailable Boolean,
+specialSchemeTender Boolean,
+isBidValidityExpiryTaskCreated Boolean,
+evaluationTypeFlag Boolean,
+qcbsTenderYn Boolean,
+publishedUser String,
+isWorldBankFunded Boolean,
+ecClearanceNumber String,
+ecClearanceDate ZonedDateTime 
+}
+
+entity TenderObjectStore{
+referenceId Long,
+referenceType Long,
+activeYn Boolean
+}
+
+entity TenderGoodsItems{
+itemCode String,
+itemName String,
+indentItemId Long,
+entryOrder Integer,
+netAmt BigDecimal,
+price BigDecimal,
+quantity BigDecimal,
+specifications String,
+uomId Integer,
+uomName String,
+sampleRequiredYn Boolean
+}
+
+entity TenderSample{
+name String maxlength(50),
+designationPost String maxlength(30)
+}
+
+entity TenderTechnicalParameter{
+tenderCriterionId Long,
+name String maxlength(50),
+description String maxlength(255),
+minValue BigDecimal,
+maxValue BigDecimal,
+operator String,
+dataType String,
+optionalYn Boolean
+}
+
+entity TenderGoodsGroup{
+groupName String,
+bidItemsMandatoryYn Boolean,
+groupMandatoryYn Boolean
+}
+
+entity TenderCriterion{
+criterionMasterId Long,
+criterionType String,
+criterionCategory String,
+criterionTypeOthersValue String,
+description String,
+weight Integer
+}
+
+entity CriterionDocumentMaster{
+documentName String,
+tenderCategory String,
+activeYn Boolean
+}
+
+entity TenderCriterionDocument{
+documentName String required,
+optional Boolean required
+}
+
+entity TenderAddendum{
+  reason String,
+  description String,
+  status String
+}
+
+entity TenderCorrigendum{
+reason String,
+historyOrder Integer,
+status String,
+tenderDocCloseDateOriginal ZonedDateTime,
+tenderDocCloseDateRevised ZonedDateTime,
+tenderReceiptCloseDateOriginal ZonedDateTime,
+tenderReceiptCloseDateRevised ZonedDateTime,
+tenderQueryCloseDateOriginal ZonedDateTime,
+tenderQueryCloseDateRevised ZonedDateTime,
+technicalBidOpenDateOriginal ZonedDateTime,
+technicalBidOpenDateRevised ZonedDateTime,
+financialBidOpenDateOriginal ZonedDateTime,
+financialBidOpenDateRevised ZonedDateTime,
+prequalBidOpenDateOriginal ZonedDateTime,
+prequalBidOpenDateRevised ZonedDateTime,
+prequalTenderBidOpenOriginal ZonedDateTime,
+prequalTenderBidOpenRevised ZonedDateTime,
+preBidMeetingDateOriginal ZonedDateTime,
+preBidMeetingDateRevised ZonedDateTime,
+prequalValidityPeriodOriginal ZonedDateTime,
+prequalValidityPeriodRevised ZonedDateTime,
+prebidMeetingAddressOriginal Long,
+prebidMeetingAddressRevised  Long
+}
+
+entity TenderCorrigendumDetails{  
+  referenceNumber String,
+  readAs String
+}
+
+entity TenderQuery{
+supplierGeneralInfoId Long,
+serialNo Long,
+referenceDocument String maxlength(100),
+docSectionName String maxlength(100),
+docPageNo Integer,
+tenderQueryText TextBlob
+}
+
+entity TenderQueryResponse{
+staffGeneralInfoId Long,
+tenderQueryResponse TextBlob
+}
+
+entity TenderScrutinyMaster{
+value String,
+maxUsers Integer,
+minUsers Integer,
+activeYn Boolean 
+}
+
+entity TenderScrutinyCommittee{
+staffId Long,
+}
+
+relationship OneToOne {
+  NoticeInvitingTender{tenderSchedule} to TenderSchedule{noticeInvitingTender}
+}
+
+relationship OneToMany {
+  NoticeInvitingTender{tenderObjectStore}	to TenderObjectStore{noticeInvitingTender}
+  NoticeInvitingTender{tenderGoodsItem}		to TenderGoodsItems{noticeInvitingTender}
+  NoticeInvitingTender{tenderSample}		to TenderSample{noticeInvitingTender}
+  NoticeInvitingTender{tenderTechnicalParameter} to TenderTechnicalParameter{noticeInvitingTender}
+  NoticeInvitingTender{tenderGoodsGroup}	to TenderGoodsGroup{noticeInvitingTender}
+  NoticeInvitingTender{tenderCriterion}		to TenderCriterion{noticeInvitingTender}
+  NoticeInvitingTender{tenderCriterionDocument} to TenderCriterionDocument{noticeInvitingTender}
+  NoticeInvitingTender{tenderAddendum}		to TenderAddendum{noticeInvitingTender}
+  NoticeInvitingTender{tenderCorrigendum}	to TenderCorrigendum{noticeInvitingTender}
+  NoticeInvitingTender{tenderQuery}		to TenderQuery{noticeInvitingTender}
+  NoticeInvitingTender{tenderScrutinyCommittee} to TenderScrutinyCommittee{noticeInvitingTender}
+
+  TenderGoodsGroup{tenderGoodsItem}		to TenderGoodsItems{tenderGoodsGroup}
+  TenderCriterion{tenderCriterionDocument}	to TenderCriterionDocument{tenderCriterion}
+  TenderCorrigendum{tenderCorrigendumDetail}	to TenderCorrigendumDetails{tenderCorrigendum}
+  TenderQuery{tenderQueryResponse}		to TenderQueryResponse{tenderQuery}
+}
+
+
+
+paginate TenderSchedule, NoticeInvitingTender with pagination
+
+dto * with mapstruct
+
+service all with serviceImpl
+
+
+
+

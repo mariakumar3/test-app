@@ -1,0 +1,42 @@
+{
+  "name": "TenderCriterionDocument",
+  "fields": [
+    {
+      "fieldName": "documentName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "optional",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderCriterionDocument",
+      "relationshipName": "noticeInvitingTender"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tenderCriterion",
+      "otherEntityRelationshipName": "tenderCriterionDocument",
+      "relationshipName": "tenderCriterion"
+    }
+  ],
+  "entityTableName": "tender_criterion_document",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113123"
+}

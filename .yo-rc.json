@@ -40,7 +40,27 @@
     "pages": [],
     "creationTimestamp": 1626953154290,
     "jwtSecretKey": "MTYzZmY0MmFiZjNlNTM4MWEzNWQ0ODM5NDQwZWI0MjBhMzc2NWNhNDYwNDk2NTJkNjAxNGVkMDUwZWYxNDQyZDJmYjhiNTNjOTA2MWExYjMyNjRhMzNhOGE5NjNmYWM4YTJlNTY2MzdiN2RkMmZlNDliZWJmNTAzMDNkZTFhNWY=",
-    "reactive": false
+    "reactive": false,
+    "entities": [
+      "TenderSchedule",
+      "NoticeInvitingTender",
+      "TenderObjectStore",
+      "TenderGoodsItems",
+      "TenderSample",
+      "TenderTechnicalParameter",
+      "TenderGoodsGroup",
+      "TenderCriterion",
+      "CriterionDocumentMaster",
+      "TenderCriterionDocument",
+      "TenderAddendum",
+      "TenderCorrigendum",
+      "TenderCorrigendumDetails",
+      "TenderQuery",
+      "TenderQueryResponse",
+      "TenderScrutinyMaster",
+      "TenderScrutinyCommittee"
+    ],
+    "lastLiquibaseTimestamp": 1626953490000
   },
   "git-provider": "GitHub",
   "git-company": "mariakumar3",

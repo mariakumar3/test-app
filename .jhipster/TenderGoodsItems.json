@@ -1,0 +1,76 @@
+{
+  "name": "TenderGoodsItems",
+  "fields": [
+    {
+      "fieldName": "itemCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "itemName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "indentItemId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "entryOrder",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "netAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "specifications",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uomId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "uomName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sampleRequiredYn",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderGoodsItem",
+      "relationshipName": "noticeInvitingTender"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tenderGoodsGroup",
+      "otherEntityRelationshipName": "tenderGoodsItem",
+      "relationshipName": "tenderGoodsGroup"
+    }
+  ],
+  "entityTableName": "tender_goods_items",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113117"
+}

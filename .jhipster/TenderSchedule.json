@@ -1,0 +1,159 @@
+{
+  "name": "TenderSchedule",
+  "fields": [
+    {
+      "fieldName": "tenderNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "512"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ecv",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "indentId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "deptId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "25"
+    },
+    {
+      "fieldName": "remarks",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentTenderRef",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "noOfCalls",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "processId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "csrValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "ecvtenderyYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "certificateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "paymentsVerified",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dtsApprovalDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "mandatoryClause",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "delegateTo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "isApprovedBySelf",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "catWorkCategoryName",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "255"
+    },
+    {
+      "fieldName": "negotiationStatus",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "25"
+    },
+    {
+      "fieldName": "manualTenderYn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "districtId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "draftPublishStatus",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "csrRemarks",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "procEntityType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dtsApprovedBy",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "175"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderSchedule",
+      "relationshipName": "noticeInvitingTender",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "tender_schedule",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113114"
+}
