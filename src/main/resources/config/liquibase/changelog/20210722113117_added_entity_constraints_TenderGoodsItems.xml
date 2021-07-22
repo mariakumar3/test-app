@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity TenderGoodsItems.
+    -->
+    <changeSet id="20210722113117-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="notice_inviting_tender_id"
+                                 baseTableName="tender_goods_items"
+                                 constraintName="fk_tender_goods_items__notice_inviting_tender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="notice_inviting_tender"/>
+
+        <addForeignKeyConstraint baseColumnNames="tender_goods_group_id"
+                                 baseTableName="tender_goods_items"
+                                 constraintName="fk_tender_goods_items__tender_goods_group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tender_goods_group"/>
+    </changeSet>
+</databaseChangeLog>

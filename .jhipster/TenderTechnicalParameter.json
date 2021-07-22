@@ -1,0 +1,62 @@
+{
+  "name": "TenderTechnicalParameter",
+  "fields": [
+    {
+      "fieldName": "tenderCriterionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "255"
+    },
+    {
+      "fieldName": "minValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "maxValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "operator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "optionalYn",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderTechnicalParameter",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_technical_parameter",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113119"
+}

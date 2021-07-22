@@ -1,0 +1,38 @@
+{
+  "name": "TenderObjectStore",
+  "fields": [
+    {
+      "fieldName": "referenceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "referenceType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "activeYn",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderObjectStore",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_object_store",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113116"
+}

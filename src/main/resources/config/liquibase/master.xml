@@ -15,7 +15,38 @@
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113114_added_entity_TenderSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113115_added_entity_NoticeInvitingTender.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113116_added_entity_TenderObjectStore.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113117_added_entity_TenderGoodsItems.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113118_added_entity_TenderSample.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113119_added_entity_TenderTechnicalParameter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113120_added_entity_TenderGoodsGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113121_added_entity_TenderCriterion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113122_added_entity_CriterionDocumentMaster.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113123_added_entity_TenderCriterionDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113124_added_entity_TenderAddendum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113125_added_entity_TenderCorrigendum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113126_added_entity_TenderCorrigendumDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113127_added_entity_TenderQuery.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113128_added_entity_TenderQueryResponse.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113129_added_entity_TenderScrutinyMaster.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113130_added_entity_TenderScrutinyCommittee.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210722113115_added_entity_constraints_NoticeInvitingTender.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113116_added_entity_constraints_TenderObjectStore.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113117_added_entity_constraints_TenderGoodsItems.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113118_added_entity_constraints_TenderSample.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113119_added_entity_constraints_TenderTechnicalParameter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113120_added_entity_constraints_TenderGoodsGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113121_added_entity_constraints_TenderCriterion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113123_added_entity_constraints_TenderCriterionDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113124_added_entity_constraints_TenderAddendum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113125_added_entity_constraints_TenderCorrigendum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113126_added_entity_constraints_TenderCorrigendumDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113127_added_entity_constraints_TenderQuery.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113128_added_entity_constraints_TenderQueryResponse.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210722113130_added_entity_constraints_TenderScrutinyCommittee.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

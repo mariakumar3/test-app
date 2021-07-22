@@ -1,0 +1,35 @@
+{
+  "name": "TenderQueryResponse",
+  "fields": [
+    {
+      "fieldName": "staffGeneralInfoId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "tenderQueryResponse",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tenderQuery",
+      "otherEntityRelationshipName": "tenderQueryResponse",
+      "relationshipName": "tenderQuery"
+    }
+  ],
+  "entityTableName": "tender_query_response",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113128"
+}

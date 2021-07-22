@@ -1,0 +1,30 @@
+{
+  "name": "TenderScrutinyCommittee",
+  "fields": [
+    {
+      "fieldName": "staffId",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "noticeInvitingTender",
+      "otherEntityRelationshipName": "tenderScrutinyCommittee",
+      "relationshipName": "noticeInvitingTender"
+    }
+  ],
+  "entityTableName": "tender_scrutiny_committee",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210722113130"
+}
