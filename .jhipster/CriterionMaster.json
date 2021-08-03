@@ -1,0 +1,43 @@
+{
+  "name": "CriterionMaster",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "criterionType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentName",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tenderCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activeYn",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "criterion_master",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "testApp",
+  "clientRootFolder": "testApp",
+  "databaseType": "sql",
+  "changelogDate": "20210803174502"
+}

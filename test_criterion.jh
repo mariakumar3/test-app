@@ -1,0 +1,13 @@
+entity CriterionMaster{
+type String,
+criterionType String,
+documentName Long,
+description String,
+tenderCategory String
+activeYn Boolean
+}
+
+
+dto * with mapstruct
+
+service all with serviceImpl

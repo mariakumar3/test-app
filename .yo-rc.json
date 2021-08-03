@@ -58,9 +58,10 @@
       "TenderQuery",
       "TenderQueryResponse",
       "TenderScrutinyMaster",
-      "TenderScrutinyCommittee"
+      "TenderScrutinyCommittee",
+      "CriterionMaster"
     ],
-    "lastLiquibaseTimestamp": 1626953490000
+    "lastLiquibaseTimestamp": 1628012702000
   },
   "git-provider": "GitHub",
   "git-company": "mariakumar3",
