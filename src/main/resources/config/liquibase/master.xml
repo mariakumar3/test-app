@@ -32,6 +32,7 @@
     <include file="config/liquibase/changelog/20210722113128_added_entity_TenderQueryResponse.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210722113129_added_entity_TenderScrutinyMaster.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210722113130_added_entity_TenderScrutinyCommittee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210803174502_added_entity_CriterionMaster.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210722113115_added_entity_constraints_NoticeInvitingTender.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210722113116_added_entity_constraints_TenderObjectStore.xml" relativeToChangelogFile="false"/>
